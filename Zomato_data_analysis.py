@@ -19,3 +19,7 @@ print(dataframe.head())
 #Information about the DataFrame
 print("Information of the DataFrame:")
 print(dataframe.info())
+
+# Check for missing values
+print("Missing values in each column:")
+print(dataframe.isnull().sum())
