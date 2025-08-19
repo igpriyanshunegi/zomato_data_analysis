@@ -16,3 +16,6 @@ def handleRate(value):
 dataframe['rate']=dataframe['rate'].apply(handleRate)
 print(dataframe.head())
 
+#Information about the DataFrame
+print("Information of the DataFrame:")
+print(dataframe.info())
