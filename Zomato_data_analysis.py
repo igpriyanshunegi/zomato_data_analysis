@@ -23,7 +23,3 @@ print(dataframe.info())
 # Check for missing values
 print("Missing values in each column:")
 print(dataframe.isnull().sum())
-
-
-# Fill missing values in 'rate' with the mean
-dataframe['rate'].fillna(dataframe['rate'].mean(), inplace=True)
