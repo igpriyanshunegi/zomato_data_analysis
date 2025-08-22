@@ -72,3 +72,17 @@ plt.title("Distribution of Restaurants by Online Order Availability")
 plt.tight_layout()
 plt.show()
 
+# Sixth plot for votes by restaurant type
+plt.figure(figsize=(12, 6))
+grouped_data = dataframe.groupby('listed_in(type)')['votes'].sum()
+result = pd.DataFrame({'votes': grouped_data})
+
+# Create the plot
+plt.plot(result.index, result['votes'], color='green', marker='o')
+plt.xlabel('Type of Restaurant', color='red', fontsize=20)
+plt.ylabel('Total Votes', color='red', fontsize=20)
+plt.xticks(rotation=45)
+plt.title('Total Votes by Restaurant Type')
+plt.tight_layout()
+plt.show()
+
