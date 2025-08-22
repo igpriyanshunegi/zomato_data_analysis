@@ -51,3 +51,17 @@ plt.xticks(rotation=45)
 plt.title("Distribution of Restaurant Costs")
 plt.tight_layout()
 plt.show()
+
+
+# Fourth plot for restaurant types vs average ratings
+plt.figure(figsize=(12, 8))
+avg_ratings = dataframe.groupby('listed_in(type)')['rate'].mean().sort_values(ascending=True)
+sns.barplot(x=avg_ratings.values, y=avg_ratings.index)
+plt.xlabel("Average Rating")
+plt.ylabel("Restaurant Type")
+plt.title("Average Ratings by Restaurant Type")
+plt.tight_layout()
+plt.show()
+
+
+
