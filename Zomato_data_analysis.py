@@ -63,5 +63,12 @@ plt.title("Average Ratings by Restaurant Type")
 plt.tight_layout()
 plt.show()
 
-
+# Fifth plot for online order distribution
+plt.figure(figsize=(10, 6))
+sns.countplot(x=dataframe['online_order'])
+plt.xlabel("Online Order Available")
+plt.ylabel("Number of Restaurants")
+plt.title("Distribution of Restaurants by Online Order Availability")
+plt.tight_layout()
+plt.show()
 
