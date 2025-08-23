@@ -86,3 +86,15 @@ plt.title('Total Votes by Restaurant Type')
 plt.tight_layout()
 plt.show()
 
+# Find restaurant with maximum votes
+max_votes = dataframe['votes'].max()
+restaurant_with_max_votes = dataframe.loc[dataframe['votes'] == max_votes, 'name']
+
+print('\nAnalysis of Restaurant Votes:')
+print('-' * 30)
+print(f'Maximum votes: {max_votes}')
+print('Restaurant(s) with the maximum votes:')
+print(restaurant_with_max_votes.to_string())
+
+
+
