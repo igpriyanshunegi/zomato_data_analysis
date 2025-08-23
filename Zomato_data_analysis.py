@@ -96,5 +96,14 @@ print(f'Maximum votes: {max_votes}')
 print('Restaurant(s) with the maximum votes:')
 print(restaurant_with_max_votes.to_string())
 
+# Seventh plot - Boxplot for online order vs ratings
+plt.figure(figsize=(10, 6))
+sns.boxplot(x='online_order', y='rate', data=dataframe)
+plt.xlabel('Online Order Available', fontsize=12)
+plt.ylabel('Rating', fontsize=12)
+plt.title('Distribution of Ratings by Online Order Availability')
+plt.tight_layout()
+plt.show()
+
 
 
