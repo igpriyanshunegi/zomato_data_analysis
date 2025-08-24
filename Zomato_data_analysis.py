@@ -105,5 +105,13 @@ plt.title('Distribution of Ratings by Online Order Availability')
 plt.tight_layout()
 plt.show()
 
-
+# Eighth plot - Heatmap for listed_in(type) vs online_order
+plt.figure(figsize=(10, 6))
+pivot_table = dataframe.pivot_table(index='listed_in(type)', columns='online_order', aggfunc='size', fill_value=0)
+sns.heatmap(pivot_table, annot=True, cmap='YlGnBu', fmt='d')
+plt.title('Heatmap')
+plt.xlabel('Online Order')
+plt.ylabel('Listed In (Type)')
+plt.tight_layout()
+plt.show()
 
