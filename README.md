@@ -71,7 +71,7 @@ zomato_data_analysis/
 1. **Clone the repository**
    ```bash
    git clone https://github.com/igpriyanshunegi/zomato_data_analysis.git
-   cd zomato-data-analysis
+   cd zomato_data_analysis
    ```
 
 2. **Install required libraries**
