@@ -163,10 +163,4 @@ Contributions, bug reports, and feature requests are welcome!
 
 ---
 
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
 > **Note:** This dataset is intended for educational and analytical purposes only. Restaurant data sourced from Zomato listings in Bengaluru, India.
