@@ -20,8 +20,7 @@ A comprehensive exploratory data analysis (EDA) of Zomato restaurant data from B
 
 ## Overview
 
-This project performs an end-to-end exploratory data analysis on
-Zomato's restaurant listings. The goal is to answer business questions such as:
+This project performs an end-to-end exploratory data analysis on Zomato's restaurant listings. The goal is to answer business questions such as:
 
 - Which restaurant types are most common on Zomato?
 - Do restaurants offering online ordering receive higher ratings?
